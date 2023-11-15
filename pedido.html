@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="pedido.css">
+    <script src="pedido.js" defer></script>
+</head>
+
+<body>
+   <div class="time" style="text-align: center;">
+    <h1>Tempo restante</h1>
+    <p id="tempo"></p>
+   </div>
+    <div class="container">
+        <h1 >Vai pagar o lanche hoje?</h1>
+        <h4>selecione uma opção!</h4>
+        <button id="botaoNao">Não</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="botaoSim">Sim</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Muito bem</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Prepara o bolso que nós vamos no Mc
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jogo">
+        <button id="iniciar">INICIAR</button>
+    </div>
+</body>
+
+</html>
